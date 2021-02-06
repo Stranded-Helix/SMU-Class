@@ -1,0 +1,119 @@
+:root {
+    --color1: #333940;
+    --color2: #a055a7;
+    --color3: white;
+    --color4: #6c4875;
+}
+
+html{
+    background-color: var(--color1);
+}
+
+header {
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--color2);
+    font-size: 32px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+h2 {
+    color: var(--color3);
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+.heart::after {
+    content: " \1f496";
+    color: initial;
+}
+
+.info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.info-box{
+    margin: 2%;
+    padding: 10px;
+    border-color: var(--color3);
+    border-style: dashed;
+    border-width: 2px;
+    position: relative;
+    width: calc(88% / 3);
+
+}
+
+.info-box p {
+    color: var(--color2);
+    padding: 10px;
+    font-weight: 500;
+}
+
+.info-box:hover {
+    box-shadow: 5px 5px 5px 5px var(--color2);
+}
+
+.info-box-header{
+    border: solid 1px var(--color3);
+    margin-top: -30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 95%;
+    background-color: var(--color1);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+
+}
+.info-box-header h1 {
+    font-size: 24px;
+}
+
+.code-box{
+    background-image: linear-gradient(var(--color4), var(--color2));
+    text-align: left;
+    color: var(--color3);
+    border-radius: 10px;
+}
+
+.code-box pre{
+    padding: 10px;
+    font-family: monospace;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+
+    .info-box {
+        width: calc(92% / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .info-box {
+        width: 96%;
+    }
+}
